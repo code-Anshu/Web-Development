@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>223108 JS Assessment 01</title>
+    <link rel="stylesheet" href="cartAddItems.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Cart Items</h1>
+            <div class="inData">
+                <input type="text" id="expName" placeholder="Expense Name">
+                <input type="number" id="amt" placeholder="Amount">
+                <input type="submit" id="submit" value="Add Item">
+            </div>
+            <div class="subData">
+                <table id="putData">
+                    <thead>
+                        <tr id="header">
+                            <th>Expense Value</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="footer">
+                    <div id="total">
+                        <span>Total:</span>
+                        
+                        <span id="totalAmt">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cartAddItems.js"></script>
+</body>
+
+</html>

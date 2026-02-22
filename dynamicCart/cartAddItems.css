@@ -1,0 +1,144 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+.main
+{
+    /* background-color:azure; */
+    margin:auto;
+    position: relative;
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    align-items:center;
+    margin-top: 5%;
+    height:70vh;
+}
+
+.container
+{
+    background-color: rgb(227 227 227 / 41%);
+    border-radius: 20px;
+    justify-content: center;
+    /* align-content: center; */
+    display: inline-block;
+    height:60vh;
+    width:100%;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 30px;
+}
+
+.inData
+{
+    margin:4% 30%;
+    display: flex;
+}
+
+input
+{
+    height:40px;
+    text-align: center;
+    width:35%;
+    border-radius: 5%;
+}
+
+#submit
+{
+    width: 29%;
+    height:auto;
+    background-color:#17bb17;
+    color:white;
+    border-radius:5%;
+    cursor: pointer;
+}
+.subData
+{
+    
+    /* background-color: rgba(206, 197, 197, 0.41); */
+    text-align: center;
+    border-radius: 5%;
+    width:80%;
+    margin:auto;
+    /* display: flex; */
+}
+
+#putData
+{
+    /* margin-left:40%; */
+    font-size: x-large;
+    border-radius: 5%;
+    width:100%;
+}
+
+#putData tbody
+{
+    width:10%;
+    background-color: white;
+}
+
+#header 
+{
+    background-color: rgba(206, 197, 197, 0.41);
+    border:1px solid white;
+    border-radius: 5%;
+    /* display:inline; */
+    height:45px;
+    border-collapse:collapse ;
+}
+
+#header th
+{
+    border: none;
+}
+/* #header p
+{
+     display:inline;
+     width: 100%;
+}*/
+
+/*#header span
+{
+    font-size:x-large;
+    font-weight: bold;
+    display: inline-block;
+    width:310px;
+    padding:10px;
+} */
+
+#delBtn
+{
+    font-size: large;
+    border: none;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+#footer
+{
+    background-color: rgba(206, 197, 197, 0.41);
+    /* float:right; */
+    display: inline-block;
+    width:100%;
+    border:1px solid white;
+    border-radius: 5%;
+}
+
+#total
+{
+    float:right;
+}
+
+#footer span
+{
+    /* float:left; */
+    font-size:x-large;
+    font-weight: bold;
+    margin-right:5px;
+}

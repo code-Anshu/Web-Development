@@ -1,0 +1,185 @@
+body
+{
+    background: linear-gradient(95deg, #ffb9c5, #c03bc0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.add-task-div
+{
+    background-color: #ece0f8;
+    width: 25%;
+    padding: 2px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+}
+
+header
+{
+    background-color: #f8f9fa;;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+header p
+{
+    margin: 5px;
+}
+
+.inputTo-do
+{
+    background-color: #ece0f8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 20px;
+}
+
+input[type="text"]
+{
+    padding: 5px;
+    width: 80%;
+    height: 22px;
+    font-size: 15px;
+}
+
+#addTask-btn
+{
+    background: none;
+    width: 18%;
+    height: 36px;
+    font-size: 20px;
+    color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+#addTask-btn:hover
+{
+    background-color: #28a745;
+    color: white;
+}
+
+.displayCard
+{
+    background-color:#ece0f8;
+    width: 45%;
+    border-radius: 5px;
+}
+
+#delAll-btn
+{
+    color: #dc3545;
+    width: 15%;
+    height: 35px;
+    font-size: 15px;
+    background: none;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+#delAll-btn:hover 
+{
+    background-color: #dc3545;
+    color: white;
+}
+
+#to-do-task
+{
+    list-style-type: none;
+    padding: 0px;
+}
+
+#task
+{
+    background-color: pink;
+    height: auto;
+    margin: 5px 0px;
+    padding: 10px;
+    font-size: 18px;
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+    color: rgb(101, 101, 255);
+    cursor: pointer;
+}
+
+.true 
+{
+    text-decoration: line-through;
+}
+
+.control-btns, .sub-control-btns
+{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    float: right;
+}
+
+.control-btns button, .sub-control-btns button
+{
+    width: 40%;
+    font-size: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.control-btns button:hover, .sub-control-btns button:hover
+{
+    border-bottom: 1px solid black;
+}
+.sub-task-input
+{
+    background-color:#287da736;
+    margin: 20px;
+    /* display: none; */
+}
+.inputDiv
+{
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputDiv button
+{
+    width: 18%;
+    height: 36px;
+    font-size: 30px;
+}
+.liTextContent
+{
+    padding: 5px;
+}
+.liTextContent:hover
+{
+    /* background-color: #f0f8ff61; */
+    color: #230045a6;
+    
+}
+#sub-task-ul
+{
+    text-decoration: none;
+    padding: 0px;
+}
+#subTask
+{
+    color: midnightblue;
+    display: flex;
+    justify-content: space-between;
+    background: aquamarine;
+    padding: 5px;
+}

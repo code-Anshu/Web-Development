@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="to_do_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="add-task-div">
+        <header>Add New Task</header>
+        <div class="inputTo-do">
+            <input type="text" id="inputTask" name="inputTask" placeholder="Enter a task" autocomplete="off">
+            <button id="addTask-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="displayCard">
+        <header>
+            <p>To Do List</p>
+            <button id="delAll-btn">Delete All</button>
+        </header>
+        <div class="displayTo-do">
+            <ul id="to-do-task">
+                <!-- Task will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="to_do_list.js"></script>
+</body>
+</html>

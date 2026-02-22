@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>223108 Assignment 06</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(32, 58, 75);
+            color: white;
+            height: 30px;
+            padding: 6px 20px 2px 20px;
+        }
+
+        header div {
+            float: right;
+        }
+
+        header div i {
+            padding: 0px 5px 2px 5px;
+            border-left: 1px solid white;
+        }
+
+        nav span {
+            color: orange;
+            font-size: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline;
+            border: 1px solid black;
+            width: fit-content;
+            padding: 4px;
+        }
+
+        nav div {
+            display: flex;
+            width: 100%;
+            clear: both;
+        }
+
+        nav div div ul {
+            list-style-type: none;
+            text-decoration: none;
+            /* display:block; */
+            width: 100%;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        nav div div ul li,
+        a {
+            color: black;
+            float: left;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 20px;
+
+        }
+
+        nav div div ul li {
+            display: block;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        }
+
+        #contact {
+            float: right;
+        }
+
+        .buton {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 15px;
+        }
+
+        .section1 {
+            background-color: rgb(32, 58, 75);
+            height: 60px;
+        }
+
+        .section1 div select {
+            width: 15%;
+        }
+
+        .section1 div {
+            padding: 5px;
+            display: flex;
+            clear: both;
+        }
+
+        .section1 div input {
+            width: 50%;
+            font-weight: bold;
+        }
+
+        #section2 {
+            background-image: url(public/img/download.jpg);
+            background-position: fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            height: 80vh;
+            width: auto;
+            padding: 15%;
+        }
+
+        div.mycont {
+            background-color: #e8e4e4;
+            max-height: fit-content;
+            width: 100%;
+            /* display:flex; */
+            position: relative;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            clear: both;
+            overflow: auto;
+        }
+
+        div.section3 {
+            border: 1px solid #ccc;
+            float: left;
+            width: 300px;
+            margin: 10px;
+        }
+
+        div.section3:hover {
+            border: 1px solid #777;
+        }
+
+        div.section3 img {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        div.desc {
+            padding-left: 15px;
+            text-align: left;
+            line-height: 1px;
+            color: grey;
+            display: table;
+        }
+
+        div.desc ul {
+            list-style-type: none;
+            height: 50px;
+            padding: 0px;
+            display: inline-block;
+        }
+
+        div.desc ul li {
+            float: left;
+            padding: 2px;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        div.desc span {
+            color: orange;
+            float: right;
+            padding-right: 5px;
+            margin-top: 25px;
+        }
+
+        div.desc p {
+            display: inline;
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        .section4 {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        #adaCate {
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .row1 {
+            margin: 0px 10px;
+            width: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            clear: both;
+            height: 300px;
+        }
+
+        .row2 {
+            margin: 0px 10px;
+            width: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            clear: both;
+            height: 300px;
+        }
+
+        .row3 {
+            margin: 0px 10px;
+            width: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            height: 300px;
+        }
+
+        div.section5 {
+            height: 100%;
+            max-width: 100%;
+        }
+
+        #box1 {
+            background-image: url(public/img/download.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60vh;
+            opacity: 0.7;
+            align-content: center;
+            position: relative;
+            z-index: -1;
+            top: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            bottom: 350px;
+        }
+
+        .col {
+            background-color: rgb(169, 48, 77);
+            color: white;
+            width: 30%;
+            padding: 25px;
+
+        }
+
+        #col span {
+            font-weight: bold;
+            font-size: 25px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <i class="fa fa-phone" aria-hidden="true"></i>Call us +9876543219
+        <i class="fa fa-play" aria-hidden="true"></i>Support
+        <div>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <span>Grabmedis</span>
+            <div>
+                <ul>
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <a href="Home">HOME</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-list"></i>
+                        <a href="Listing">LISTING</a>
+
+                    </li>
+                    <li>
+                        <i class="fa fa-tag"></i>
+                        <a href="Categories">CATEGORIES</a>
+                    </li>
+                    <li><i class="fa fa-user"></i>
+                        <a href="Dashboard">DASHBOARD</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-telegram"></i>
+                        <a href="Pages">PAGES</a>
+                    </li>
+                    <li id="contact"></i>
+                        <a href="Contact">CONTACT</a>
+                        <button class="buton">+ POST FREE AD</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="section1">
+        <div>
+            <select>
+                <option>Select an Option</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+            <input type="search" placeholder="What Are You Looking For" size="40">
+            <button class="buton">SEARCH</button>
+        </div>
+    </div>
+
+
+    <div id="section2">
+        <h1>Over 95,00,000 Classified Ads Listing</h1>
+        <p>Search from the largest cassifieds marketplace & Post unlimited classifieds free!</p>
+    </div>
+
+
+    <div class="mycont">
+        <h1 style="text-align: center;color:orange;">Latest Ads</h1>
+        <p style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, a tempore
+            reiciendis
+            odio omnis</p>
+        <div class="section3">
+            <a href="public/img/xp.jpg" target="_blank"></a>
+            <img src="public/img/xp.jpg" alt="selfie.jpg">
+            <div class="desc">
+                <h6>Mobiles</h6>
+                <h4>Xperia Z5 Premium</h4>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Hounhton Street London
+                <ul>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i> (2) </li>
+                </ul>
+                <span><i class="fa fa-dollar" aria-hidden="true"></i>280</span>
+                <hr>
+                <p>
+                    <i class="fa fa-eye" aria-hidden="true"></i> 347 Views
+                </p>
+                <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 45 minutes ago
+                </p>
+            </div>
+        </div>
+        <div class="section3">
+            <a target="_blank" href="public/img/house.jpg"></a>
+            <img src="public/img/house.jpg" alt="house.jpg" width="600px" height="500px">
+            <div class="desc">
+                <h6>Real Estate</h6>
+                <h4>House For Sale</h4>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Hounhton Street London
+                <ul>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i> (2) </li>
+                </ul>
+                <span><i class="fa fa-dollar" aria-hidden="true"></i>45,000</span>
+                <hr>
+                <p>
+                    <i class="fa fa-eye" aria-hidden="true"></i> 347 Views
+                </p>
+                <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 45 minutes ago
+                </p>
+            </div>
+        </div>
+        <div class="section3">
+            <a href="public/img/watch.jpg" target="_blank"></a>
+            <img src="public/img/watch.jpg" alt="watch.jpg">
+            <div class="desc">
+                <h6>Sports & Equipment</h6>
+                <h4>Prometheus Sailfish Watch</h4>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Hounhton Street London
+                <ul>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i> (2) </li>
+                </ul>
+                <span><i class="fa fa-dollar" aria-hidden="true"></i>45,000</span>
+                <hr>
+                <p>
+                    <i class="fa fa-eye" aria-hidden="true"></i> 347 Views
+                </p>
+                <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 45 minutes ago
+                </p>
+            </div>
+        </div>
+        <div class="section3">
+            <a href="public/img/car.jpg" target="_blank"></a>
+            <img src="public/img/car.jpg" alt="car.jpg">
+            <div class="desc">
+                <h6>Vehicles</h6>
+                <h4>Cadilac ats black</h4>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>Hounhton Street London
+                <ul>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star checked" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-star" aria-hidden="true"></i> (2) </li>
+                </ul>
+                <span><i class="fa fa-dollar" aria-hidden="true"></i>45,000</span>
+                <hr>
+                <p>
+                    <i class="fa fa-eye" aria-hidden="true"></i> 347 Views
+                </p>
+                <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 45 minutes ago
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <h1 style="text-align: center;color:orange;">Ads Categories</h1>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quidem dolores,
+            quasi culpa architecto debitis ipsa odio ducimus non nobis.</p>
+        <div class="row1">
+            <div id="adaCate">
+                <img src="public/img/service.jpg" alt="service.jpg">
+                <h5 style="margin:20px;">Services</h5>
+                <p style="color:grey;">4,345 Ads</p>
+            </div>
+            <div id="adaCate">
+                <img src="public/img/jobs.jpg" alt="jobs.jpg">
+                <h5 style="margin:20px;">Jobs</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+            </div>
+            <div id="adaCate">
+                <img src="public/img/re.jpg" alt="re.jpg">
+                <h5 style="margin:20px;">Real Estate</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+            <div id="adaCate">
+                <img src="public/img/fashion.jpg" alt="fashion.jpg">
+                <h5 style="margin:20px;">Fashion</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+        </div>
+        <div class="row2">
+            <div id="adaCate">
+                <img src="public/img/bike.jpg" alt="bike.jpg">
+                <h5 style="margin:20px;">Bike</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+            <div id="adaCate">
+                <img src="public/img/cars.jpg" alt="cars.jpg">
+                <h5 style="margin:20px;">Cars</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+            <div id="adaCate">
+                <img src="public/img/mobile.jpg" alt="mobile.jpg">
+                <h5 style="margin:20px;">Mobile</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+            </div>
+            <div id="adaCate">
+                <img src="public/img/furniture.jpg" alt="furniture">
+                <h5 style="margin:20px;">Furniture</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+        </div>
+        <div class="row3">
+            <div id="adaCate">
+                <img src="public/img/pet.jpg" alt="pet.jpg">
+                <h5 style="margin:20px;">Pets</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+            <div id="adaCate">
+                <img src="public/img/electronics.jpg" alt="electronics.jpg">
+                <h5 style="margin:20px;">Electronics</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+            <div id="adaCate">
+                <img src="public/img/matrimoney.jpg" alt="matrimoney.jpg">
+                <h5 style="margin:20px;">Matrimony</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+            <div id="adaCate">
+                <img src="public/img/restaurents.jpg" alt="restaurents.jpg">
+                <h5 style="margin:20px;">Restaurents</h5>
+                <p style="color:grey;line-height:0px;">4,345 Ads</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section5">
+        <div id="box1">
+        </div>
+        <div class="container">
+            <div class="col" style="background-color: rgb(169, 48, 77)">
+                <i class="fa fa-search" aria-hidden="true" style="margin:40px 3px 5px 20px;"></i>
+                <span>Searching For Something?</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium dicta aliquam iure odio
+                    assumenda doloremque sint itaque ipsam perferendis!</p>
+            </div>
+            <div class="col" style="background-color: rgb(215, 122, 56)">
+                <i class="fa fa-tag" aria-hidden="true" style="margin:40px 3px 5px 20px;"></i>
+                <span>Want To Sell Something?</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium dicta aliquam iure odio
+                    assumenda doloremque sint itaque ipsam perferendis!</p>
+            </div>
+        </div>
+    </div>
+    <div class="section6">
+        <h2>Our Happy Clients</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In possimus minus veniam illum natus explicabo
+            eligendi iure qui porro necessitatibus expedita impedit saepe adipisci corporis unde, eius sit animi
+            quaerat!
+            Voluptatem quas neque, eos eaque soluta placeat. Neque reprehenderit sed ab eligendi. Ad incidunt, itaque
+            doloremque sequi eaque, aut rem dolorum consequatur nemo sit expedita excepturi blanditiis tempore voluptas
+            natus!
+        <address>-ABC(Service Man)</address>
+        </p>
+        <img src="public/img/clients.jpg" alt="clients.jpg">
+        <img src="public/img/clients.jpg" alt="clients.jpg">
+        <img src="public/img/clients.jpg" alt="clients.jpg">
+    </div>
+
+    <div class="section7">
+        <h2>Get The App Link</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam fuga optio esse et pariatur reiciendis?</p>
+        <div>
+            <input type="number" placeholder="+61">
+            <span>
+                <input type="number" size="10">
+            </span>
+            <input type="submit" value="GET APP LINK" size="10">
+        </div>
+    </div>
+
+    <div class="section8">
+        <h2>Latest News</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor natus ducimus molestiae molestias deleniti
+            perspiciatis?</p>
+        <div>
+            <img src="public/img/newscar.jpg" alt="newscar.jpg">
+        </div>
+        <div>
+            <h3>07 June, 2017</h3>
+            <strong>Sed ut perspiciatis unde omnis iste erroe sit voluptatem accusantium doloremque laudantium</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repudiandae ipsam natus illum esse
+                dolorum assumenda omnis ullam sapiente, magni optio illo dolor, mollitia impedit!</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <div class="section9">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>223108 JS Assignment 02</title>
+    <link rel="stylesheet" href="librarySystem.css">
+
+</head>
+
+<body>
+    <h1>Library System</h1>
+    <div class="container">
+        <div class="befSub">
+            <form onsubmit="return formValidate()" id="libraryForm" method="get" > 
+                <div class="formDesign" id="namef">
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" placeholder="Abc..." min="3" max="10" size="70" required>
+                    <p class="errormsg"></p>
+                </div>
+                <div class="formDesign" id="namel">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" placeholder="Xyz..." min="3" max="10" size="70" required>
+                    <p class="errormsg"></p>
+                </div>
+                <div class="formDesign" id="email">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="abc@gmail.com" min="6" max="120" size="70" required>
+                    <p class="errormsg"></p>
+                </div>
+                <div class="formDesign" id="phone">
+                    <label for="phNo">Phone Number: </label>
+                    <input type="tel" id="phNo" placeholder="+91 00000 00000" required style="width:65%;">
+                    <p class="errormsg"></p>
+                </div>
+                <div class="formDesign" id="address">
+                    <label for="address">Address:</label>
+                    <textarea type="message" id="address" name="address" placeholder="Bilaspur(HP)" min="5" max="500"
+                        rows="4" cols="70" required></textarea>
+                    <p class="errormsg"></p>
+                </div>
+                <div class="formDesign" id="course">
+                    <label for="course">Course:</label>
+                    <select id="course" required style="width:70%;">
+                        <option- selected>12th</option>
+                        <option>10th</option>
+                        <option>UnderGraduate</option>
+                        <option>PostGraduate</option>
+                    </select>
+                </div>
+                <div class="formDesign" id="subjects">
+                    <label for="subject">Subjects:</label>
+                    <div id="subject" style="width:70%;">
+                        <input type="checkbox" id="subject" name="subject" value="hindi">
+                        <label for="subject">Hindi</label>
+                        <input type="checkbox" id="subject" name="subject" value="english">
+                        <label for="subject">English</label>
+                        <input type="checkbox" id="subject" name="subject" value="sst">
+                        <label for="subject">SST</label>
+                        <input type="checkbox" id="subject" name="subject" value="science">
+                        <label for="subject">Science</label>
+                        <input type="checkbox" id="subject" name="subject" value="math">
+                        <label for="subject">Math</label>
+                    </div>
+                    <p class="errormsg"></p>
+                </div>
+                <div class="formDesign" id="timePeriod">
+
+                    <label for="timePer">Time Period:</label>
+                    <select id="timePer" required style="width:70%;">
+                        <option selected>1day</option>
+                        <option>1 week</option>
+                        <option>1 month</option>
+                        <option>1 year</option>
+                    </select>
+                </div>
+
+                <div class="formDesign" id="submissionDate">
+                <label for="subDate">Submission Date:</label>
+                <input type="date" id="subDate" name="subDate" placeholder="dd mm yyyy" required style="width:70%;">
+                <p class="errormsg"></p>
+                </div>
+                <button>Submit</button>
+
+        </div>
+        </form>
+
+        <div class="submitted-info" >
+            <h2>Submitted Information</h2>
+            <table>
+                <tr>
+                    <td>
+                        <h4>First Name:</h4>
+                        <p id="displayFname"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Last Name:</h4>
+                        <p id="displayLname"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Email:</h4>
+                        <p id="displayEmail"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Phone:</h4>
+                        <p id="displayPhNo"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Address:</h4>
+                        <p id="displayAddress"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Course:</h4>
+                        <p id="displayCourse"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Selected Subjects:</h4>
+                        <p id="displaySubject"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Submission Date:</h4>
+                        <p id="displaySubDate"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="librarySystem.js"></script>
+</body>
+
+</html>

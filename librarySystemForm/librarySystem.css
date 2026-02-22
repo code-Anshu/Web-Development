@@ -1,0 +1,104 @@
+/* General styling for the form */
+h1
+{
+    background-color: black;
+    color:white;
+    height:70px;
+    padding: 16px 0px 0px 20px;
+    font-size: 40px;
+}
+.container {
+    max-width: 100%;
+    margin: auto;
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 10px; */
+    background-color: #f9f9f9;
+    display: flex;
+}
+/* .formDesign
+{
+    float:right;
+} */
+
+.errormsg
+{
+    /* display: none; */
+    color:red;
+    margin:0px;
+    padding:0px;
+}
+
+.befSub
+{
+    /* border: 1px solid #000000; */
+    /* border-radius: 5px; */
+    padding:20px;
+    width:50%;
+}
+.befSub table
+{
+    width:100%;
+    border:none;
+}
+.befSub tr  td
+{
+    border:none;
+}
+
+label 
+{
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #f15a29;
+    color: white;
+    cursor: pointer;
+    width:60%;
+    margin-left:200px;
+}
+
+button:hover {
+    background-color: #e14e24;
+}
+
+.submitted-info {
+    border: 1px solid black;
+    /* margin-top: 20px; */
+    border-radius: 2px;
+    padding: 0px;
+    width:50%;
+}
+.submitted-info h2
+{
+    background-color:rgb(213, 208, 208);
+    border-bottom: 1px solid black;
+    margin:0px;
+    padding:15px;
+}
+.submitted-info table
+{
+    width:100%;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    height:92%;
+}
+.submitted-info tr,td
+{
+    border-bottom: 1px solid black;
+    padding-left:10px;
+}

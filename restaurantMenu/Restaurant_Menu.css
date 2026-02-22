@@ -1,0 +1,186 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+header
+{
+    background-color: black;
+}
+.main
+{
+    background-image: url(Images/fruits_bg.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 70vh;
+    opacity: 0.5;
+}
+.container
+{
+    background-color:white;
+    position:absolute;
+    top: 0%;
+    display: flex;
+    width:100%;
+    align-items: center;
+    border-radius: 0px 0px 35px 35px;
+}
+/* .navbar
+{
+    background-color: white;
+    display: flex;
+    width:100%;
+} */
+.container ul
+{
+    list-style-type: none;
+    display: flex;
+    width:100%;
+    justify-content: flex-end;
+    gap:5%;
+    margin-right: 50px;
+}
+.container ul li a
+{
+    /* border:1px solid black; */
+    /* padding:2px */
+    color: black;
+    text-decoration: none;
+    /* font-size:medium; */
+    /* background-color: aqua; */
+    padding:8px;
+}
+select
+{
+    background-color: transparent;
+    border: none;
+}
+ul li
+{
+    padding:8px;
+}
+.active
+{
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+
+}
+li:hover 
+{
+    background-color: orange;
+    color: white;
+    border-radius:5px;
+}
+.content
+{
+    /* background-color: cadetblue; */
+    width:fit-content;
+    position: absolute;
+    top:30%;
+    color:white;
+    margin-left: 70px;
+}
+.content button
+{
+    background-color: orange;
+    color:white;
+    border:none;
+    border-radius:4px;
+    padding:10px;
+    margin:5px;
+    width:26%;
+}
+.section1
+{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.menu
+{
+    background-color: black;
+    color:white;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.menu-items
+{
+    display: inline-block;
+    /* background-color: aquamarine; */
+    color:black;
+    width: fit-content;
+    height:100%;
+    margin: 20px;
+    border:1px solid white;
+}
+.menu-items img
+{
+    width: 260px;
+    height: auto;
+    margin: 5px;
+}
+
+.desc
+{
+    background-color:beige ;
+    margin:0px;
+    font-size: x-large;
+    padding:5px;
+}
+.menu-items:hover
+{
+    border:1px solid rgb(197, 190, 190);
+    cursor: pointer;
+}
+.dishes
+{
+    width:100%;
+    height: auto;
+    margin: 5px 0px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.dishes img
+{
+    width: 90%;
+    margin: 10px 16px;
+}
+.dishes div
+{
+    width: 25%;
+    border: 1px solid grey;
+    margin: 10px 1px;
+}
+#dish-name
+{
+    text-align: center;
+}
+/* .breakfast
+{
+    background-color: azure;
+}
+.lunch
+{
+    background-color: bisque;
+}
+.dinner
+{
+    background-color: blanchedalmond;
+}
+.snacks
+{
+    background-color: pink;
+}
+.soft-drinks
+{
+    background-color: burlywood;
+} */

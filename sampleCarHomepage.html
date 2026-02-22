@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>223108 CSS Assessment01</title>
+    <style>
+        header {
+            background-color: rgb(4, 4, 69);
+            display: flex;
+            color: white;
+            align-items: center;
+        }
+
+        .box ul {
+            gap: 20px;
+            display: flex;
+            list-style-type: none;
+        }
+
+        #checked {
+            color: yellow;
+        }
+
+        .box ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 30px;
+            width: 30px;
+            float: left;
+            padding: 6px;
+            margin: 2px;
+        }
+
+        div.apply {
+            display: flex;
+            margin-left: auto;
+
+        }
+
+        .apply button {
+            padding: 5px;
+            background-color: yellow;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .image {
+            background-color: black;
+            height: 464px;
+            max-width: 100%;
+        }
+
+        .image img {
+            height: 463px;
+            width: 100%;
+            opacity: 0.4;
+        }
+
+        #text {
+            top: 25%;
+            left: 35%;
+            position: absolute;
+            color: white;
+        }
+
+        #butt {
+            margin-left: 160px;
+        }
+
+        #butt button {
+            background-color: rgb(4, 4, 69);
+            color: white;
+            border: 1px solid yellow;
+            padding: 10px;
+        }
+
+        .rect {
+            justify-content: center;
+            gap: 10px;
+            display: flex;
+            margin-left: -120px;
+            margin-top: 186px;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: rgb(20 20 60);
+            color: #ffffffbf;
+            height: 100px;
+            width: 250px;
+        }
+
+        .box2 {
+            background-color: rgb(20 20 60);
+            color: #ffffffbf;
+            height: 100px;
+            width: 250px;
+        }
+
+        .box3 {
+            background-color: rgb(20 20 60);
+            color: #ffffffbf;
+            height: 100px;
+            width: 250px;
+        }
+
+        .bottom {
+            background-color: white;
+            height: 400px;
+            width: 100%;
+        }
+
+        .bottom h1 {
+            color: rgb(7, 7, 104);
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .bottom p {
+            color: black;
+            text-align: center;
+        }
+
+        .bottom img {
+            height: 200px;
+            width: 400px;
+            margin-left: 35%;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="public/img/logo-symbol-dark.png" alt="logo-symbol-dark">
+        <span style="padding:9px 9px 9px 0px; margin:4px 4px 4px 0px;">Academics</span>
+        <div class="box">
+            <ul>
+                <li>
+                    <a href="home" id="checked">HOME</a>
+                </li>
+                <li>
+                    <a href="pages">PAGES</a>
+                </li>
+                <li>
+                    <a href="courses">COURSES</a>
+                </li>
+                <li>
+                    <a href="research">RESEARCH</a>
+                </li>
+                <li>
+                    <a href="news">NEWS</a>
+                </li>
+                <li>
+                    <a href="gallery">GALLERY</a>
+                </li>
+                <li>
+                    <a href="contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="apply">
+            <button>Apply Now</button>
+        </div>
+    </header>
+
+    <div class="image">
+        <img src="public/img/download.jpg" alt="car metre">
+        <div id="text">
+            <h1>Over 95,00,000 Classified Ads Listing</h1>
+            <p>Search from largest assifieds marketplace & Post unlimited classifieds free!</p>
+            <div id="butt">
+                <button>
+                    START A COURSE
+                </button>
+            </div>
+            <div class="rect">
+                <div class="box1">Scholarship Facility
+                    <p>Empty dummy text printing</p>
+                </div>
+                <div class="box2">Skilled Lecturers
+                    <p>Empty dummy text printing</p>
+                </div>
+                <div class="box3">Book Library
+                    <p>Empty dummy text printing</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h1>Welcome To Academics</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae tempore impedit labore earum autem
+                accusantium tempora numquam, nihil voluptates sed illum quis ipsam accusamus est enim sapiente et
+                soluta. Temporibus?</p>
+            <div>
+                <img src="public/img/newscar.jpg" alt="new car">
+            </div>
+        </div>
+
+</body>
+
+</html>

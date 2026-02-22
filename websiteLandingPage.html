@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            background: repeating-linear-gradient(45deg, #ff4f004a, #11ff0d61, #0095ff4a 50%);
+            margin: 0px;
+        }
+
+        #header {
+            background: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            width: -webkit-fill-available;
+            height: 350px;
+            margin: 0px;
+        }
+
+        #header h1 {
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 100px;
+        }
+
+        h4 {
+            display: inline-block;
+        }
+
+        p {
+            line-height: 1.5;
+            margin: 0px;
+            text-align: justify;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        #images {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #navbar
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navbar ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+            margin: 0px;
+            list-style-type: none;
+            font-size: large;
+            width: 60%;
+        }
+
+        #logo {
+            background: none;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            width: fit-content;
+            margin: 0px 50px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(0, 213, 255);
+            font-size: larger;
+        }
+
+        div {
+            background-color: #ffffff45;
+            padding: 10px;
+            margin: 15px 0px;
+        }
+
+        #qualifications ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+
+        #qualifications li {
+            background: linear-gradient(45deg, #1100ffe4, #d900ffe9);
+            color: white;
+            gap: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 12px 20px;
+        }
+
+        #btns {
+            background: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        button {
+            background: #0070ff;
+            color: white;
+            width: 100px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button a {
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #ff8300ab;
+            color: black;
+        }
+
+        #contactInfo {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: normal;
+        }
+
+        #contactInfo div
+        {
+            width: 50%;
+            border-right: 1px solid white;
+            background: none;
+        }
+
+        #email-id
+        { 
+            color: white;
+            text-decoration: none;
+        }
+        #email-id:hover
+        {
+            color: rgba(255, 255, 255, 0.707);
+            text-decoration: underline;
+        }
+
+        #social-links a 
+        {
+            color: white;
+            font-size: 25px;
+            margin: 20px;
+        }
+        #social-links a:hover
+        {
+            color:rgba(12, 223, 255, 0.657);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <nav id="navbar">
+            <div id="logo">Cognifyz</div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#aboutUs">About us</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#courses">Courses</a>
+                </li>
+                <li>
+                    <a href="#career">Career</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#ContactUs">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>
+            Welcome to Web Developer Internship Opportunities at <br> Cognifyz Technologies
+        </h1>
+    </div>
+    <div id="overview">
+        <h2>Overview of the Internship Program and duration</h2>
+        <ul>
+            <li>The internship program is unpaid for the candidates who do not opt for the interview process.</li>
+            <li>Those who choose to undergo the interview process will be subject to a nominal administrative cost.</li>
+            <li>The approach to stipend eligibility under Cognifyz Technologie's policies is tied to successful
+                interview performance, promoting transparency and fairness in the internship program.</li>
+        </ul>
+        <h4>Selection Process : </h4>
+        <p>Interns are selected based on their application, resume, and in some cases, an interview. The selection
+            process may vary for different internship positions.</p>
+        <h4>Duration of Internship : </h4>
+        <p>The duration of internship is specified in thr internship offer letter provided to selected candidates.It
+            varies depending on the nature of the internship.</p>
+    </div>
+    <div id="benefits">
+        <h2>Benefits of Internship</h2>
+        <p>You will get industrial experience and knowledge on respective domain along with Resume building and LinkedIn
+            Account building Skills.</p>
+        <ul>
+            <li>Offer letter from Cognifyz Technologies</li>
+            <li>Intership Certificate</li>
+            <li>Resume Building Support</li>
+            <li>Exposure to Real-world Projects</li>
+            <li>Letter of recommendation based on performance</li>
+            <li>After clearing interview, you will be eligible for a performance-based stipend.</li>
+        </ul>
+    </div>
+    <div id="qualifications">
+        <h2>Qualifications Required</h2>
+        <p>The internship program is open to students and individuals with varying levels of experience and educational
+            backgrounds.
+            Specific eligibility criteria may be outlined in individual internship postings.
+        </p>
+        <h4>Skills and Technologies</h4>
+        <ul>
+            <li>Software Development</li>
+            <li>Web Development</li>
+            <li>Full Stack Development</li>
+            <li>Mobile App Development</li>
+            <li>UI/UX Design</li>
+            <li>Front End Development</li>
+            <li>Flutter</li>
+            <li>Data Science</li>
+            <li>Data Analytics using Python</li>
+            <li>Machine Learning</li>
+            <li>Data Engineering</li>
+            <li>.Net DEveloper</li>
+            <li>Java Developer</li>
+            <li>Digital Marketing</li>
+            <li>Python Developer</li>
+
+        </ul>
+    </div>
+    <div id="btns">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform"
+            target="_blank"><button>Apply Now</button></a>
+        <a href="#services" target="_blank"><button>Learn Now</button></a>
+    </div>
+
+    <div id="aboutUs">
+        <h1>About Us</h1>
+        <ul>
+            <li>
+                Cognifyz Technoogies is a leading technology company that specializes in the dynamic field of data
+                science and
+                excels in delivering impactful projects and solutions.
+            </li>
+            <li>
+                The company offers a wide range of products and services, including artificial intelligence (AI),
+                machine
+                learning (ML), and data analytics tools.
+            </li>
+            <li>
+                Cognifyz Tecnologies also provides training programs to enhance skills and knowledge in these areas.
+            </li>
+            <li>
+                The company focuses on delivering innovative and cutting-edge solutions to meet the evolving needs of
+                businesses.
+            </li>
+        </ul>
+    </div>
+    <div id="images">
+        <img src="public/img/corporate-02.jpg" alt="Corporate02-img">
+        <img src="public/img/corporate-03.jpg" alt="Corporate03-img">
+    </div>
+    <footer id="contactInfo">
+        <div>
+            <p>Location : <i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra</p>
+            <br>
+            <p>Email ID: <a href="cognifyztechnologies@gmail.com" id="email-id">cognifyztechnologies@gmail.com</a></p>
+        </div>
+        <div id="social-links">
+            <a href="https://www.linkedin.com/company/cognifyz-technologies/"><i class="fa-brands fa-linkedin"></i></a>
+            
+            <a href="https://www.instagram.com/cognifyz_tech/"><i class="fa-brands fa-instagram"></i></a>
+            
+            <a href="https://t.me/cognifyz_technologies"><i class="fa-brands fa-telegram"></i></a>
+
+            <a href="https://www.youtube.com/channel/UCw3AbKUno4NQMWcPGFGOEZA"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
